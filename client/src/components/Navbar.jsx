@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#071112]/95 backdrop-blur-xl">
-      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-10">
+      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-2 sm:px-4 lg:px-6">
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#151c22] shadow-lg shadow-black/30 ring-1 ring-white/10">
