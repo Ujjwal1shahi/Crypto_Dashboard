@@ -113,3 +113,11 @@ export const login = async (req, res, next) => {
         next(error);
     }
 };
+
+
+export const me = async (req, res) => {
+    return res.status(200).json({
+        success: true,
+        user: publicUser(req.user)
+    });
+};
