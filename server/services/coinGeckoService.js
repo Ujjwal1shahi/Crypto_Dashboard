@@ -15,11 +15,11 @@ const getCoinGeckoHeaders = () => {
     return headers;
 };
 
-const requestCoinGecko = async (endpoint, query = {}, ttlMs = 60_000) => {
+export const requestCoinGecko = async (endpoint, query = {}, ttlMs = 60_000) => {
     const cacheKey = getCacheKey(endpoint, query);
     const cached = cache.get(cacheKey);
 
-    if(cache && cached.expiresAt > Date.now()){
+    if(cached && cached.expiresAt > Date.now()){
         return cached.data;
     }
 

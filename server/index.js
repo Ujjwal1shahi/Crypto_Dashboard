@@ -8,10 +8,10 @@ import rateLimit from "express-rate-limit";
 
 
 import authRoutes from "./routes/auth.js";
-import marketRoutes from "./routes/marketRoutes.js";
-import trendingRoutes from "./routes/trendingRoutes.js";
-import globalRoutes from "./routes/globalRoutes.js";
-import chartRoutes from "./routes/chartRoutes.js";
+import marketRoutes from "./routes/marketRouter.js";
+import trendingRoutes from "./routes/trendingRouter.js";
+import globalRoutes from "./routes/globalRouter.js";
+import chartRoutes from "./routes/chartRouter.js";
 
 
 dotenv.config();
